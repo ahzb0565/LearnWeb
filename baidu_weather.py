@@ -2,20 +2,9 @@
 #!/usr/bin/env python
 
 #Use baidu API to get weather
+#A good example for GET method
 
 import sys, urllib, urllib2, json
-"""
-url = 'http://apis.baidu.com/apistore/weatherservice/citylist?cityname=%E6%9C%9D%E9%98%B3'
-
-req = urllib2.Request(url)
-
-req.add_header("apikey", "your apikey")
-
-resp = urllib2.urlopen(req)
-content = resp.read()
-if(content):
-    print(content)
-"""
 
 class Weather(object):
     API_CITYLIST_URL = 'http://apis.baidu.com/apistore/weatherservice/citylist?cityname='
